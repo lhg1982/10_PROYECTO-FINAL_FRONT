@@ -42,7 +42,7 @@
             //se verifica si la respuesta del servidor es exitosa mediante la propiedad ok de la respuesta.
             .then(function (response) {
                 if (response.ok) {
-                    return res//ponse.json();  Parseamos la respuesta JSON
+                    return response.json();//  Parseamos la respuesta JSON
                 } else {
                     // Si hubo un error, lanzar explícitamente una excepción
                     // para ser "catcheada" más adelante
